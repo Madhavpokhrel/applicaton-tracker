@@ -4,9 +4,6 @@ const applicationRouter= require('./router/applicationRouter')
 const app = express()
 const mongoose = require('mongoose')
 
-
-
-
 app.use(express.json())
 app.use(applicationRouter)
 
@@ -24,8 +21,3 @@ mongoose.connect('mongodb://localhost/applicatondb',{useNewUrlParser:true, useFi
 app.listen(PORT, ()=>{
     console.log('Server started on port on : ', PORT)
 })
-
-
-
-
-
