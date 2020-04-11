@@ -1,0 +1,18 @@
+form.custom-inputform {
+    padding: 20px 10px;
+}
+
+form.custom-inputform h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+form.custom-inputform input {
+    padding: 10px 22px;
+}
+
+.MuiCardActions-root.MuiCardActions-spacing {
+    justify-content: center;
+}
