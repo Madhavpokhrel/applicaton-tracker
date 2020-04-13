@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(applicationRouter)
 
 
-mongoose.connect('mongodb://localhost/applicatondb',{useNewUrlParser:true, useFindAndModify:false, useUnifiedTopology:true})
+mongoose.connect('mongodb://localhost/applicatondata',{useNewUrlParser:true, useFindAndModify:false, useUnifiedTopology:true})
 .then(()=>{
 	console.log("mongodb connected successfull ")
 })
