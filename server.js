@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(applicationRouter)
 app.use(express.static('build'));
 
-app.get('*',*(req,res)=>{
+app.get('*',(req,res)=>{
 	res.sendFile(path.join(__dirname, 'client/build/index.html'));
 })
 mongoose.connect('mongodb://localhost/applicatondata',{useNewUrlParser:true, useFindAndModify:false, useUnifiedTopology:true})
