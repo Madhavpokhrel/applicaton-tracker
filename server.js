@@ -7,10 +7,10 @@ const path = require('path');
 
 app.use(express.json())
 app.use(applicationRouter)
-app.use(express.static('build'));
+app.use(express.static(path.join(__dirname,'client/build')));
 
-app.get('*',(req,res)=>{
-	res.sendFile(path.join(__dirname, 'client/build/index.html'));
+app.get('/',(req,res)=>{
+	res.sendFile(path.join(__dirname, 'client/build','index.html'));
 })
 mongoose.connect('mongodb://localhost/applicatondata',{useNewUrlParser:true, useFindAndModify:false, useUnifiedTopology:true})
 .then(()=>{
